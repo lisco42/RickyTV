@@ -10,8 +10,8 @@ Media player for people who have mental disabilities
 - Touchless OS - no internet connection, never drop to where user needs to interact with system itself, only interface.
 
 # Software ideas so far:
-Base - Debian or Gentoo
-Player - Mplayer with resume functionality
-Interface - Something built with python or perl backending into either Framebuffer or X
-Input - controls via button to usb-keyboard translation
-Videos - Pre-transcoded for PI via handbrake (will include instructions)
+- Base - Debian or Gentoo
+- Player - Mplayer with resume functionality
+- Interface - Something built with python or perl backending into either Framebuffer or X
+- Input - controls via button to usb-keyboard translation
+- Videos - Pre-transcoded for PI via handbrake (will include instructions)
