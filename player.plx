@@ -74,8 +74,8 @@ while (42) {
   }
   ReadMode 'normal';
   switch ($input) {
-    case "[C" { $counter++ }
-    case "[D" { $counter-- }
+    case "[C" { $counter++ } ## case is <ctrl char> -> arrow
+    case "[D" { $counter-- } ## case is <ctrl char> <- arrow
     case " " { system("$player -p -b \"@files[$counter]\""); }
   }
   if ( $counter == abs($counter) ) {} else { $counter = $maxcounter-1; }
