@@ -11,7 +11,7 @@ Media player for people who have mental disabilities
 
 # Software ideas so far:
 - Base - Debian or Gentoo
-- Player - Mplayer with resume functionality
-- Interface - Something built with python or perl backending into either Framebuffer or X
-- Input - controls via button to usb-keyboard translation
+- Player - omxplayer - utilizes raspberry pi's hardware decoding for playback
+- Interface - Perl script that auto-starts with the system, reads from a video directory and runs from the framebuffer
+- Input - controls via button to usb-keyboard translation - still in progress
 - Videos - Pre-transcoded for PI via handbrake (will include instructions)
