@@ -9,7 +9,7 @@ Media player for people who have mental disabilities
 - Easy image flashing instructions for linux/mac/windows
 - Touchless OS - no internet connection, never drop to where user needs to interact with system itself, only interface.
 
-# Software ideas so far:
+# Software:
 - Base - Debian or Gentoo
 - Player - omxplayer - utilizes raspberry pi's hardware decoding for playback
 - Interface - Perl script that auto-starts with the system, reads from a video directory and runs from the framebuffer
