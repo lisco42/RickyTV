@@ -2,6 +2,7 @@
 ###############################################################################
 ## player.plx - a constant video player for raspberry pi utilizing omxplayer ##
 ## Original purpose: RickyTV - media player for mentally handycapped people  ##
+## Orig Author: Dan Bidleman                                                 ##
 ## Prereqs (some): 512M Raspi B, omxplayer, perl 5.10+                       ##
 ## Cpan modules: Term::ReadKey, File::Next, Switch, Term::ANSIColor          ## 
 ## This is for usage without an X server (just framebuffer)                  ##
@@ -46,10 +47,17 @@ while (42) {
 say "Configured Video directory:  $videodir"; 
 my $files = File::Next::files( {sort_files => 1,}, "$videodir" );
 my @files;
+my @names;
 
 while ( defined ( my $file = $files->() ) ) {
 push @files, $file;
 }
+
+## working on pulling path out of the filename here
+#@files = @names;
+#foreach my $i (@files) {print "$i is part of names array";}
+#for (@names) {s/.*\///;}
+#foreach my $i (@names) {print "$i is part of new names array";}
 
 $counter=0;
 $maxcounter = scalar @files;
